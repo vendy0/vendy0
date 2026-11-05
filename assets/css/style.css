@@ -76,6 +76,31 @@ nav a[aria-current="page"] {
   text-underline-offset: 6px;
 }
 
+/* ---- Icône du panier dans la navigation ---- */
+.lien-panier {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--safran) !important;
+}
+
+.icone-panier {
+  display: block;
+}
+
+.badge-panier {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: var(--safran);
+  color: var(--nuit);
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.05rem 0.35rem;
+  border-radius: 999px;
+  line-height: 1;
+}
+
 main {
   max-width: 80rem;
   margin: 0 auto;

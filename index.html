@@ -25,7 +25,41 @@
         <a href="index.html" aria-current="page">Accueil</a>
         <a href="boutique.html">Boutique</a>
         <a href="contact.html">Contact</a>
-        <a href="boutique.html#panier">Panier (<span id="compteur">0</span>)</a>
+        <a href="boutique.html#panier" class="lien-panier" aria-label="Panier">
+          <svg
+            class="icone-panier"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+            ></path>
+            <line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"
+              stroke="currentColor"
+              stroke-width="2"
+            ></line>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 10a4 4 0 0 1-8 0"
+            ></path>
+          </svg>
+          <span id="compteur" class="badge-panier">0</span>
+        </a>
       </nav>
     </header>
 

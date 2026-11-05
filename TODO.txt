@@ -5,3 +5,4 @@
 - La barre de recherche
 - Les images des épices
 - Animations sur les boutons (les boutons de nav)
+- Souligner un menu nav au hover
