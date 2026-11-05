@@ -78,7 +78,9 @@ function afficherProduits() {
     .map(
       (p) => `
     <li class="produit">
-      <span class="pastille" style="background:${p.couleur}"></span>
+      <span class="pastille" ${p.url ? `data-zoom="${p.url}"` : ""} style="background: ${p.url ? "transparent" : p.couleur}">
+        ${p.url ? `<img src="${p.url}" alt="${p.nom}">` : ""}
+      </span>
       <div class="infos">
         <h3>${p.nom}</h3>
         <p>${p.desc}</p>
@@ -167,3 +169,54 @@ document.addEventListener("click", (e) => {
 afficherFiltres();
 afficherProduits();
 afficherPanier();
+
+
+// ---- Gestion de la modale d'image ----
+const modal = document.getElementById("modal-image");
+const modalImg = document.getElementById("modal-img-contenu");
+
+function ouvrirModal(url) {
+  if (!modal || !modalImg) return;
+  modalImg.src = url;
+  modal.classList.add("ouvert");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function fermerModal() {
+  if (!modal) return;
+  modal.classList.remove("ouvert");
+  modal.setAttribute("aria-hidden", "true");
+  modalImg.src = "";
+}
+
+// Gestion des clics pour la modale et les boutons existants
+document.addEventListener("click", (e) => {
+  const pastille = e.target.closest("[data-zoom]");
+  if (pastille) {
+    ouvrirModal(pastille.dataset.zoom);
+    return;
+  }
+
+  // Fermer la modale si on clique sur la croix ou en dehors de l'image
+  if (e.target.id === "modal-image" || e.target.classList.contains("modal-fermer")) {
+    fermerModal();
+  }
+
+  const bouton = e.target.closest("button");
+  if (!bouton) return;
+  if (bouton.dataset.ajouter) ajouter(bouton.dataset.ajouter);
+  if (bouton.dataset.plus) changer(bouton.dataset.plus, 1);
+  if (bouton.dataset.moins) changer(bouton.dataset.moins, -1);
+  if (bouton.dataset.categorie) {
+    categorieActive = bouton.dataset.categorie;
+    afficherFiltres();
+    afficherProduits();
+  }
+  if (bouton.id === "commander") commander();
+  if (bouton.id === "vider") sauvegarder([]);
+});
+
+// Fermer la modale avec la touche Échap (Escape)
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") fermerModal();
+});

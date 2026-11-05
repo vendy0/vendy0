@@ -9,9 +9,17 @@
 }
 
 .accueil {
-  background: var(--nuit) var(--fond) center / cover fixed no-repeat;
+  background: var(--nuit);
   color: var(--lin);
 }
+.accueil::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--fond) center / cover no-repeat;
+}
+
 .accueil main {
   max-width: none;
   padding: 0;
@@ -255,11 +263,6 @@
   }
 }
 /* ---- Desktop d'abord, on adapte vers le bas ---- */
-@media (max-width: 64rem) {
-  .accueil {
-    background-attachment: scroll;
-  }
-}
 @media (max-width: 40rem) {
   .accueil header {
     padding: 1rem;
