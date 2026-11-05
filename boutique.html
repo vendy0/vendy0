@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique — Nisca Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.png" alt="Logo Nisca Store" /></a>
+      <nav aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="boutique.html" aria-current="page">Boutique</a>
+        <a href="contact.html">Contact</a>
+        <a href="boutique.html#panier"
+          >Panier (<span id="compteur">0.00 €</span>)</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <h1>Les épices du marché</h1>
+      <p>Sachets de 100 g. Prix en euros (€).</p>
+
+      <div class="boutique">
+        <div>
+          <div
+            id="filtres"
+            class="filtres"
+            role="group"
+            aria-label="Filtrer par catégorie"
+          ></div>
+          <ul id="produits" class="liste"></ul>
+        </div>
+
+        <aside id="panier" aria-labelledby="titre-panier">
+          <h2 id="titre-panier">Votre panier</h2>
+          <div id="panier-liste"></div>
+          <p class="total">Total : <span id="total">0.00 €</span></p>
+          <button id="commander" class="principal">
+            Commander sur WhatsApp
+          </button>
+          <button id="vider">Vider le panier</button>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Nisca Store. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

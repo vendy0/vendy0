@@ -1,36 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>NISCA STORE</title>
-</head>
-<body>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Accueil — Nisca Store</title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html" aria-label="Accueil NISCA STORE">
-                <img src="logo.png" alt="Logo de NISCA STORE" class="logo-store">
-            </a>
-            <div class="nav-actions">
-                <span class="nav-option">Home</span>
-                <span class="nav-option">Products</span>
-                <span class="nav-option">
-                    <a href="about.html" aria-label="À propos de NISCA STORE">About</a>
-                </span>
-                <span class="nav-option">FAQ</span>
-            </div>
-        </nav>
+      <a href="index.html"><img src="logo.png" alt="Logo Nisca Store" /></a>
+      <nav aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="contact.html">Contact</a>
+        <a href="boutique.html#panier">Panier (<span id="compteur">0</span>)</a>
+      </nav>
     </header>
-    
-    
-    <main>
 
+    <main>
+      <section class="hero">
+        <h1>Nisca Store</h1>
+        <p>Les épices qui font voyager vos papilles.</p>
+        <a class="bouton principal" href="boutique.html">Voir la boutique</a>
+      </section>
+
+      <section>
+        <h2>Comment commander</h2>
+        <ol class="etapes">
+          <li>
+            <h3>Choisissez</h3>
+            <p>Parcourez les épices par catégorie et ajoutez-les au panier.</p>
+          </li>
+          <li>
+            <h3>Vérifiez</h3>
+            <p>Le panier calcule le total en euros et garde vos choix.</p>
+          </li>
+          <li>
+            <h3>Envoyez</h3>
+            <p>Un message WhatsApp déjà rédigé part vers la boutique.</p>
+          </li>
+        </ol>
+      </section>
     </main>
-    
 
     <footer>
-
+      <p>&copy; 2026 Nisca Store. Tous droits réservés.</p>
     </footer>
-</body>
+
+    <script type="module" src="script.js"></script>
+  </body>
 </html>

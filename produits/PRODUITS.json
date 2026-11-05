@@ -1,0 +1,281 @@
+[
+  {
+    "id": "epis",
+    "categorie": "haiti",
+    "nom": "Épis haïtien",
+    "desc": "Persil, ail et poivron pilés pour le riz et les viandes.",
+    "prix": 250,
+    "piquant": 1,
+    "couleur": "#4E8A3A"
+  },
+  {
+    "id": "djondjon",
+    "categorie": "haiti",
+    "nom": "Djondjon",
+    "desc": "Champignons noirs séchés, la base du riz djondjon.",
+    "prix": 400,
+    "piquant": 0,
+    "couleur": "#2E2A33"
+  },
+  {
+    "id": "griot",
+    "categorie": "haiti",
+    "nom": "Assaisonnement griot",
+    "desc": "Pour mariner le porc avant de le frire.",
+    "prix": 300,
+    "piquant": 1,
+    "couleur": "#B5651D"
+  },
+  {
+    "id": "pikliz",
+    "categorie": "haiti",
+    "nom": "Mélange pikliz",
+    "desc": "Piment, clou et poivre pour le condiment qui pique.",
+    "prix": 280,
+    "piquant": 2,
+    "couleur": "#C2761E"
+  },
+  {
+    "id": "bouillon",
+    "categorie": "haiti",
+    "nom": "Assaisonnement bouillon",
+    "desc": "Pour les bouillons et les soupes du dimanche.",
+    "prix": 320,
+    "piquant": 1,
+    "couleur": "#8A9A3B"
+  },
+  {
+    "id": "poisson",
+    "categorie": "haiti",
+    "nom": "Mélange poisson frit",
+    "desc": "Ail, thym et zeste séché pour assaisonner le poisson.",
+    "prix": 300,
+    "piquant": 1,
+    "couleur": "#5E8C8A"
+  },
+  {
+    "id": "pimanbouk",
+    "categorie": "piments",
+    "nom": "Piman bouk",
+    "desc": "Petit piment rond, très fort. À doser avec prudence.",
+    "prix": 300,
+    "piquant": 3,
+    "couleur": "#D6361E"
+  },
+  {
+    "id": "oiseau",
+    "categorie": "piments",
+    "nom": "Piment oiseau",
+    "desc": "Minuscule et brûlant, pour les sauces et l'huile pimentée.",
+    "prix": 350,
+    "piquant": 3,
+    "couleur": "#B3261E"
+  },
+  {
+    "id": "cayenne",
+    "categorie": "piments",
+    "nom": "Cayenne moulu",
+    "desc": "Poudre fine et forte, à saupoudrer en fin de cuisson.",
+    "prix": 280,
+    "piquant": 3,
+    "couleur": "#E04A1F"
+  },
+  {
+    "id": "fume",
+    "categorie": "piments",
+    "nom": "Piment fumé",
+    "desc": "Une chaleur moyenne avec un goût de feu de bois.",
+    "prix": 380,
+    "piquant": 2,
+    "couleur": "#8E2C14"
+  },
+  {
+    "id": "flocons",
+    "categorie": "piments",
+    "nom": "Flocons de piment",
+    "desc": "Pour relever les pâtes, les œufs et les grillades.",
+    "prix": 260,
+    "piquant": 2,
+    "couleur": "#E2672A"
+  },
+  {
+    "id": "pimentdoux",
+    "categorie": "piments",
+    "nom": "Piment doux séché",
+    "desc": "Parfumé et à peine piquant, pour les sauces et le riz.",
+    "prix": 240,
+    "piquant": 1,
+    "couleur": "#E9893B"
+  },
+  {
+    "id": "girofle",
+    "categorie": "douces",
+    "nom": "Clou de girofle",
+    "desc": "Pour les sauces, le thé et le sirop.",
+    "prix": 350,
+    "piquant": 0,
+    "couleur": "#6B3A24"
+  },
+  {
+    "id": "cannelle",
+    "categorie": "douces",
+    "nom": "Cannelle en bâtons",
+    "desc": "Parfume le café, le lait et les desserts.",
+    "prix": 300,
+    "piquant": 0,
+    "couleur": "#A8602B"
+  },
+  {
+    "id": "cannellem",
+    "categorie": "douces",
+    "nom": "Cannelle moulue",
+    "desc": "Pour les gâteaux, les bouillies et le chocolat chaud.",
+    "prix": 280,
+    "piquant": 0,
+    "couleur": "#B97A3E"
+  },
+  {
+    "id": "muscade",
+    "categorie": "douces",
+    "nom": "Noix de muscade",
+    "desc": "À râper sur les bouillies, les crèmes et les sauces.",
+    "prix": 450,
+    "piquant": 0,
+    "couleur": "#8C6B4A"
+  },
+  {
+    "id": "anis",
+    "categorie": "douces",
+    "nom": "Anis étoilé",
+    "desc": "Une étoile suffit pour parfumer un thé ou un sirop.",
+    "prix": 320,
+    "piquant": 0,
+    "couleur": "#5A3320"
+  },
+  {
+    "id": "cardamome",
+    "categorie": "douces",
+    "nom": "Cardamome",
+    "desc": "Graines parfumées pour le café et les pâtisseries.",
+    "prix": 600,
+    "piquant": 0,
+    "couleur": "#9BA66B"
+  },
+  {
+    "id": "vanille",
+    "categorie": "douces",
+    "nom": "Vanille en gousses",
+    "desc": "Fendre la gousse et gratter les graines dans les crèmes.",
+    "prix": 900,
+    "piquant": 0,
+    "couleur": "#2B1A12"
+  },
+  {
+    "id": "gingembre",
+    "categorie": "racines",
+    "nom": "Gingembre moulu",
+    "desc": "Pour les tisanes, les jus et les marinades.",
+    "prix": 200,
+    "piquant": 2,
+    "couleur": "#D9A441"
+  },
+  {
+    "id": "curcuma",
+    "categorie": "racines",
+    "nom": "Curcuma (kourkouma)",
+    "desc": "Colore les plats en jaune avec une saveur douce.",
+    "prix": 250,
+    "piquant": 0,
+    "couleur": "#F2B705"
+  },
+  {
+    "id": "poivrenoir",
+    "categorie": "racines",
+    "nom": "Poivre noir",
+    "desc": "Moulu finement, pour toutes les cuissons.",
+    "prix": 275,
+    "piquant": 1,
+    "couleur": "#2A2A2E"
+  },
+  {
+    "id": "poivreblanc",
+    "categorie": "racines",
+    "nom": "Poivre blanc",
+    "desc": "Plus discret, idéal pour les sauces claires.",
+    "prix": 300,
+    "piquant": 1,
+    "couleur": "#D9D3C3"
+  },
+  {
+    "id": "paprika",
+    "categorie": "racines",
+    "nom": "Paprika",
+    "desc": "Rouge et doux, pour colorer les viandes et le riz.",
+    "prix": 260,
+    "piquant": 0,
+    "couleur": "#B83A2A"
+  },
+  {
+    "id": "cumin",
+    "categorie": "racines",
+    "nom": "Cumin",
+    "desc": "Chaud et terreux, pour les viandes et les haricots.",
+    "prix": 280,
+    "piquant": 0,
+    "couleur": "#9A7B4F"
+  },
+  {
+    "id": "tim",
+    "categorie": "herbes",
+    "nom": "Thym (tim)",
+    "desc": "Séché au soleil, indispensable dans les sauces.",
+    "prix": 200,
+    "piquant": 0,
+    "couleur": "#7A8F3C"
+  },
+  {
+    "id": "persil",
+    "categorie": "herbes",
+    "nom": "Persil séché",
+    "desc": "Pour les sauces, les soupes et les omelettes.",
+    "prix": 180,
+    "piquant": 0,
+    "couleur": "#3F7D4E"
+  },
+  {
+    "id": "laurier",
+    "categorie": "herbes",
+    "nom": "Laurier",
+    "desc": "Quelques feuilles dans les bouillons et les haricots.",
+    "prix": 150,
+    "piquant": 0,
+    "couleur": "#55703A"
+  },
+  {
+    "id": "basilic",
+    "categorie": "herbes",
+    "nom": "Basilic",
+    "desc": "Pour les sauces tomate et les marinades.",
+    "prix": 200,
+    "piquant": 0,
+    "couleur": "#2F6B3F"
+  },
+  {
+    "id": "origan",
+    "categorie": "herbes",
+    "nom": "Origan",
+    "desc": "Parfume les viandes grillées et les sauces.",
+    "prix": 220,
+    "piquant": 0,
+    "couleur": "#6D7F3B"
+  },
+  {
+    "id": "citronnelle",
+    "categorie": "herbes",
+    "nom": "Citronnelle (sitwonèl)",
+    "desc": "Pour les tisanes et les plats de poisson.",
+    "prix": 180,
+    "piquant": 0,
+    "couleur": "#B7C24A"
+  }
+]
