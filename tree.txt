@@ -1,0 +1,28 @@
+Structure du dossier pour le volume Acer
+Le numéro de série du volume est 2802-E1A7
+C:.
+¦   boutique.html
+¦   contact.html
+¦   index.html
+¦   README.md
+¦   TODO.txt
+¦   tree.txt
+¦   
++---assets
+    +---css
+    ¦       accueil.css
+    ¦       style.css
+    ¦       
+    +---img
+    ¦       fond.svg
+    ¦       logo.svg
+    ¦       
+    +---js
+        ¦   accueil.js
+        ¦   script.js
+        ¦   
+        +---produits
+                CATEGORIES.json
+                NIVEAUX.json
+                PRODUITS.json
+                
