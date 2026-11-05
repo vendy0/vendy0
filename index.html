@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,10 +16,10 @@
     <link rel="stylesheet" href="assets/css/accueil.css" />
     <title>Accueil — Nisca Store</title>
   </head>
-  <body>
+  <body class="accueil">
     <header>
       <a href="index.html"
-        ><img src="assets/img/logo.svg" alt="Logo Nisca Store"
+        ><img src="assets/img/logo.svg" alt="Nisca Store"
       /></a>
       <nav aria-label="Navigation principale">
         <a href="index.html" aria-current="page">Accueil</a>
@@ -28,27 +31,59 @@
 
     <main>
       <section class="hero">
-        <h1>Nisca Store</h1>
-        <p>Les épices qui font voyager vos papilles.</p>
-        <a class="bouton principal" href="boutique.html">Voir la boutique</a>
+        <h1><span>NISCA</span></h1>
+        <div class="hero-bas">
+          <p>Les épices qui font voyager vos papilles.</p>
+          <a class="bouton principal" href="boutique.html">Voir la boutique</a>
+        </div>
       </section>
 
-      <section>
-        <h2>Comment commander</h2>
+      <div class="bandeau" aria-hidden="true">
+        <div class="defile">
+          <span>Épis haïtien</span><span>Djondjon</span><span>Piman bouk</span
+          ><span>Clou de girofle</span><span>Cannelle</span><span>Vanille</span
+          ><span>Curcuma</span><span>Thym</span> <span>Épis haïtien</span
+          ><span>Djondjon</span><span>Piman bouk</span
+          ><span>Clou de girofle</span><span>Cannelle</span><span>Vanille</span
+          ><span>Curcuma</span><span>Thym</span>
+        </div>
+      </div>
+
+      <section class="fenetre">
+        <p class="phrase revele">Une pincée suffit pour changer un plat.</p>
+      </section>
+
+      <section class="plein">
+        <p class="etiquette revele">Nos familles</p>
+        <h2 class="revele">Cinq façons de parfumer votre cuisine</h2>
+        <ul id="familles" class="familles"></ul>
+      </section>
+
+      <section class="fenetre"></section>
+
+      <section class="plein alt">
+        <p class="etiquette revele">Comment commander</p>
         <ol class="etapes">
-          <li>
+          <li class="revele">
             <h3>Choisissez</h3>
             <p>Parcourez les épices par catégorie et ajoutez-les au panier.</p>
           </li>
-          <li>
+          <li class="revele">
             <h3>Vérifiez</h3>
             <p>Le panier calcule le total en euros et garde vos choix.</p>
           </li>
-          <li>
+          <li class="revele">
             <h3>Envoyez</h3>
             <p>Un message WhatsApp déjà rédigé part vers la boutique.</p>
           </li>
         </ol>
+      </section>
+
+      <section class="fenetre">
+        <p class="phrase revele">Prêt à cuisiner ?</p>
+        <a class="bouton principal revele" href="boutique.html"
+          >Ouvrir la boutique</a
+        >
       </section>
     </main>
 
@@ -57,5 +92,6 @@
     </footer>
 
     <script type="module" src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/accueil.js"></script>
   </body>
 </html>
