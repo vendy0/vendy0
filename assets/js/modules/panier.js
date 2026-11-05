@@ -1,4 +1,4 @@
-import PRODUITS from "../../produits/PRODUITS.json" with { type: "json" };
+import PRODUITS from "../produits/PRODUITS.json" with { type: "json" };
 
 const CLE = "nisca-panier";
 const NUMERO_WHATSAPP = "594694913097";

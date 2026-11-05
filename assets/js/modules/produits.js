@@ -1,6 +1,6 @@
-import PRODUITS from "../../produits/PRODUITS.json" with { type: "json" };
-import CATEGORIES from "../../produits/CATEGORIES.json" with { type: "json" };
-import NIVEAUX from "../../produits/NIVEAUX.json" with { type: "json" };
+import PRODUITS from "../produits/PRODUITS.json" with { type: "json" };
+import CATEGORIES from "../produits/CATEGORIES.json" with { type: "json" };
+import NIVEAUX from "../produits/NIVEAUX.json" with { type: "json" };
 import { lirePanier, trouver, formater, totalPanier } from "./panier.js";
 
 let categorieActive = "tout";
