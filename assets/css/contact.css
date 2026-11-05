@@ -1,0 +1,87 @@
+/* ---- Style de la page Contact enrichie ---- */
+.contact-main {
+  max-width: 55rem !important;
+}
+
+.contact-main .sous-titre {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.actions-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.bouton.avec-icone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Infos pratiques (Horaires / Localisation) */
+.infos-pratiques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.carte-info {
+  background: var(--terre);
+  border: 1px solid var(--trait);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.carte-info h3 {
+  font-size: 1.1rem;
+  color: var(--safran);
+  margin-bottom: 0.5rem;
+}
+
+.carte-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* FAQ rapide */
+.faq-section {
+  border-top: 1px solid var(--trait);
+  padding-top: 2rem;
+}
+
+.faq-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq-section details {
+  background: var(--terre);
+  border: 1px solid var(--trait);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.faq-section summary {
+  font-weight: 700;
+  color: var(--lin);
+}
+
+.faq-section details[open] summary {
+  color: var(--safran);
+  margin-bottom: 0.5rem;
+}
+
+.faq-section details p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}

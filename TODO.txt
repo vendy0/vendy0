@@ -1,2 +1,0 @@
-- Page de chargement
-- Le README
