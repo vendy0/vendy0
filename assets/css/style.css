@@ -140,6 +140,32 @@ main {
   margin-top: 1.5rem;
 }
 
+/* ---- Barre de recherche ---- */
+.zone-recherche {
+  margin-bottom: 1.25rem;
+}
+
+#recherche-epice {
+  width: 100%;
+  font: inherit;
+  background: var(--terre);
+  color: var(--lin);
+  border: 2px solid var(--trait-fort);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+#recherche-epice::placeholder {
+  color: var(--lin);
+  opacity: 0.5;
+}
+
+#recherche-epice:focus-visible {
+  outline: 3px solid var(--safran);
+  outline-offset: 3px;
+  border-color: var(--safran);
+}
+
 /* ---- Filtres ---- */
 .filtres {
   display: flex;

@@ -3,7 +3,7 @@ import PRODUITS from "./produits/PRODUITS.json" with { type: "json" };
 import CATEGORIES from "./produits/CATEGORIES.json" with { type: "json" };
 import NIVEAUX from "./produits/NIVEAUX.json" with { type: "json" };
 
-const NUMERO_WHATSAPP = "594694913097"; // ton numéro, sans + ni espaces
+const NUMERO_WHATSAPP = "594694913097"; // Numéro de NISCA STORE pour la commande via WhatsApp
 const CLE = "nisca-panier"; // nom de la case dans localStorage
 
 // ---- Gestion de la modale d'image ----
@@ -12,6 +12,8 @@ const modalImg = document.getElementById("modal-img-contenu");
 
 // ---- Outils ----
 let categorieActive = "tout"; // la catégorie affichée en ce moment
+let termeRecherche = ""; // le terme de recherche saisi par l'utilisateur
+
 const trouver = (id) => PRODUITS.find((p) => p.id === id);
 const formater = (n) =>
   (n / 100).toLocaleString("fr-FR", { style: "currency", currency: "EUR" });
@@ -72,11 +74,38 @@ function afficherFiltres() {
 
 function afficherProduits() {
   const zone = document.getElementById("produits");
-  if (!zone) return; // on n'est pas sur la page boutique
-  const visibles =
-    categorieActive === "tout"
-      ? PRODUITS
-      : PRODUITS.filter((p) => p.categorie === categorieActive);
+  if (!zone) return; // On n'est pas sur la page boutique
+
+  // 1. Filtrage combiné (catégorie + texte recherché sans accents ni casse)
+  const visibles = PRODUITS.filter((p) => {
+    // Filtre par catégorie
+    const correspondCategorie =
+      categorieActive === "tout" || p.categorie === categorieActive;
+
+    // Fonction utilitaire pour nettoyer les accents et les majuscules
+    const normaliser = (texte) =>
+      texte
+        ? texte
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()
+        : "";
+
+    // Nettoyage du texte recherché et des données du produit
+    const texte = normaliser(termeRecherche);
+    const nomProduit = normaliser(p.nom);
+    const descProduit = normaliser(p.desc);
+
+    const correspondTexte =
+      !texte || nomProduit.includes(texte) || descProduit.includes(texte);
+
+    return correspondCategorie && correspondTexte;
+  });
+
+  if (visibles.length === 0) {
+    zone.innerHTML = `<p style="grid-column: 1 / -1; text-align: center; padding: 2rem 0;">Aucune épice ne correspond à votre recherche.</p>`;
+    return;
+  }
 
   zone.innerHTML = visibles
     .map(
@@ -153,27 +182,7 @@ function commander() {
   );
 }
 
-// ---- Un seul écouteur de clics pour toute la page (délégation d'événements) ----
-document.addEventListener("click", (e) => {
-  const bouton = e.target.closest("button");
-  if (!bouton) return;
-  if (bouton.dataset.ajouter) ajouter(bouton.dataset.ajouter);
-  if (bouton.dataset.plus) changer(bouton.dataset.plus, 1);
-  if (bouton.dataset.moins) changer(bouton.dataset.moins, -1);
-  if (bouton.dataset.categorie) {
-    categorieActive = bouton.dataset.categorie;
-    afficherFiltres();
-    afficherProduits();
-  }
-  if (bouton.id === "commander") commander();
-  if (bouton.id === "vider") sauvegarder([]);
-});
-
-// ---- Démarrage ----
-afficherFiltres();
-afficherProduits();
-afficherPanier();
-
+// ---- Fonctions de la Modale ----
 function ouvrirModal(url) {
   if (!modal || !modalImg) return;
   modalImg.src = url;
@@ -188,24 +197,30 @@ function fermerModal() {
   modalImg.src = "";
 }
 
-// Gestion des clics pour la modale et les boutons existants
+// ---- Écouteurs d'événements uniques ----
+
+// Gestion unique des clics (pastilles, modale, boutons d'action)
 document.addEventListener("click", (e) => {
+  // 1. Clic sur une pastille pour zoomer l'image
   const pastille = e.target.closest("[data-zoom]");
   if (pastille) {
     ouvrirModal(pastille.dataset.zoom);
     return;
   }
 
-  // Fermer la modale si on clique sur la croix ou en dehors de l'image
+  // 2. Fermeture de la modale
   if (
     e.target.id === "modal-image" ||
     e.target.classList.contains("modal-fermer")
   ) {
     fermerModal();
+    return;
   }
 
+  // 3. Gestion des boutons (Ajouter, quantite +, quantite -, catégories, commander, vider)
   const bouton = e.target.closest("button");
   if (!bouton) return;
+
   if (bouton.dataset.ajouter) ajouter(bouton.dataset.ajouter);
   if (bouton.dataset.plus) changer(bouton.dataset.plus, 1);
   if (bouton.dataset.moins) changer(bouton.dataset.moins, -1);
@@ -222,3 +237,16 @@ document.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") fermerModal();
 });
+
+// Écouteur pour la barre de recherche en temps réel
+document.addEventListener("input", (e) => {
+  if (e.target.id === "recherche-epice") {
+    termeRecherche = e.target.value;
+    afficherProduits();
+  }
+});
+
+// ---- Démarrage ----
+afficherFiltres();
+afficherProduits();
+afficherPanier();

@@ -2,6 +2,4 @@
 - Le README
 - La page de contact
 - Dans la page contact le panier apparait à 0
-- La barre de recherche
-- Les images des épices
-- Animations sur les boutons (les boutons de nav)
+- Commenter script.js ou la diviser
