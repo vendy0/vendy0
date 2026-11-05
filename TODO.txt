@@ -1,5 +1,3 @@
 - Page de chargement
 - Le README
 - La page de contact
-- Dans la page contact le panier apparait à 0
-- Commenter script.js ou la diviser
