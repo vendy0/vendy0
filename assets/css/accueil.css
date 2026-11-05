@@ -1,0 +1,276 @@
+/* ===== Accueil : palette douce, thème épices. Chargé APRÈS style.css ===== */
+:root {
+  --nuit: #1f1a17; /* cacao */
+  --terre: #2b221d; /* écorce */
+  --lin: #e9e1d3; /* texte */
+  --trait: rgba(233, 225, 211, 0.25);
+  --safran: #c8a15a;
+  --fond: url("images/fond.svg"); /* remplace par une vraie photo : url("images/fond.jpg") */
+}
+
+.accueil {
+  background: var(--nuit) var(--fond) center / cover fixed no-repeat;
+  color: var(--lin);
+}
+.accueil main {
+  max-width: none;
+  padding: 0;
+}
+.accueil :focus-visible {
+  outline-color: var(--safran);
+}
+
+/* ---- En-tête transparent posé sur l'image ---- */
+.accueil header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 5;
+  background: transparent;
+  border-bottom: 1px solid var(--trait);
+  padding: 1rem 4vw;
+}
+.accueil header img {
+  height: 56px;
+}
+.accueil nav a {
+  color: var(--lin);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.accueil nav a[aria-current="page"] {
+  text-decoration-color: var(--safran);
+}
+
+/* ---- Boutons ---- */
+.accueil .bouton.principal {
+  background: var(--safran);
+  border-color: var(--safran);
+  color: var(--nuit);
+}
+.accueil .bouton.principal:hover {
+  background: transparent;
+  color: var(--safran);
+}
+
+/* ---- Hero : plein écran, titre géant ---- */
+.accueil .hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 8rem 4vw 3rem;
+  border: 0;
+  background: linear-gradient(
+    to top,
+    rgba(31, 26, 23, 0.85),
+    rgba(31, 26, 23, 0.1) 65%
+  );
+}
+.accueil .hero h1 {
+  font-size: clamp(4rem, 17vw, 16rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  margin: 0;
+  overflow: hidden;
+}
+.accueil .hero h1 span {
+  display: inline-block;
+  animation: monte 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes monte {
+  from {
+    transform: translateY(105%);
+  }
+}
+.hero-bas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--trait);
+}
+.accueil .hero p {
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  max-width: 30rem;
+  margin: 0;
+}
+
+/* ---- Bandeau qui défile ---- */
+.bandeau {
+  background: var(--safran);
+  color: var(--nuit);
+  overflow: hidden;
+  padding: 1rem 0;
+}
+.defile {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: defile 45s linear infinite;
+}
+.defile span {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-stretch: 125%;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.defile span::after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--nuit);
+}
+@keyframes defile {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---- Sections pleines (cachent l'image) et fenêtres (la laissent voir) ---- */
+.plein {
+  background: var(--nuit);
+  padding: 8rem 4vw;
+}
+.plein.alt {
+  background: var(--terre);
+}
+.fenetre {
+  min-height: 90vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 2rem;
+  padding: 4vw;
+  text-align: center;
+}
+.phrase {
+  font-size: clamp(2rem, 6vw, 5.5rem);
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 1.05;
+  max-width: 18ch;
+  margin: 0;
+}
+.etiquette {
+  color: var(--safran);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+.plein h2 {
+  font-size: clamp(2rem, 6vw, 5rem);
+  max-width: 16ch;
+}
+
+/* ---- Les familles : grandes lignes typographiques ---- */
+.familles {
+  list-style: none;
+  margin: 3rem 0 0;
+  padding: 0;
+  border-bottom: 1px solid var(--trait);
+}
+.familles li {
+  border-top: 1px solid var(--trait);
+}
+.familles a {
+  display: grid;
+  grid-template-columns: 4rem 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+.familles a:hover {
+  color: var(--safran);
+}
+.familles .nom {
+  font-size: clamp(1.5rem, 4.5vw, 4rem);
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 1;
+}
+.familles .num,
+.familles .nb {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* ---- Étapes ---- */
+.accueil .etapes li {
+  border-top: 1px solid var(--trait);
+}
+.accueil .etapes li::before {
+  color: var(--safran);
+}
+
+.accueil footer {
+  background: var(--nuit);
+  border-top: 1px solid var(--trait);
+}
+
+/* ---- Apparition au défilement (le JS ajoute .visible) ---- */
+.js .revele {
+  opacity: 0;
+  transform: translateY(2.5rem);
+  transition:
+    opacity 0.9s,
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.js .revele.visible {
+  opacity: 1;
+  transform: none;
+}
+.etapes li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.etapes li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .revele {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .defile,
+  .accueil .hero h1 span {
+    animation: none;
+  }
+}
+/* ---- Desktop d'abord, on adapte vers le bas ---- */
+@media (max-width: 64rem) {
+  .accueil {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 40rem) {
+  .accueil header {
+    padding: 1rem;
+  }
+  .plein {
+    padding: 5rem 1rem;
+  }
+  .familles a {
+    grid-template-columns: 2.5rem 1fr;
+  }
+  .familles .nb {
+    display: none;
+  }
+}
