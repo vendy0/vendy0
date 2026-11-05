@@ -6,7 +6,8 @@
     "desc": "Persil, ail et poivron pilés pour le riz et les viandes.",
     "prix": 250,
     "piquant": 1,
-    "couleur": "#4E8A3A"
+    "couleur": "#4E8A3A",
+    "url": "assets/img/produits/d6a42c59-ed03-404b-a362-cd7c72ef1fe7.jpg"
   },
   {
     "id": "djondjon",
@@ -15,7 +16,8 @@
     "desc": "Champignons noirs séchés, la base du riz djondjon.",
     "prix": 400,
     "piquant": 0,
-    "couleur": "#2E2A33"
+    "couleur": "#2E2A33",
+    "url": "assets/img/produits/8aabf92e-5687-4674-ae1e-363d22c0a389.jpg"
   },
   {
     "id": "griot",
@@ -24,7 +26,8 @@
     "desc": "Pour mariner le porc avant de le frire.",
     "prix": 300,
     "piquant": 1,
-    "couleur": "#B5651D"
+    "couleur": "#B5651D",
+    "url": "assets/img/produits/458e82f9-5f09-4769-865b-1c1ecda6ee80.jpg"
   },
   {
     "id": "pikliz",
@@ -33,7 +36,8 @@
     "desc": "Piment, clou et poivre pour le condiment qui pique.",
     "prix": 280,
     "piquant": 2,
-    "couleur": "#C2761E"
+    "couleur": "#C2761E",
+    "url": "assets/img/produits/watermarked_img_15031480139303344093.jpg"
   },
   {
     "id": "bouillon",
@@ -42,7 +46,8 @@
     "desc": "Pour les bouillons et les soupes du dimanche.",
     "prix": 320,
     "piquant": 1,
-    "couleur": "#8A9A3B"
+    "couleur": "#8A9A3B",
+    "url": "assets/img/produits/e39f7ac5-2e96-404f-b133-b469e23077c0.jpg"
   },
   {
     "id": "poisson",
@@ -51,7 +56,8 @@
     "desc": "Ail, thym et zeste séché pour assaisonner le poisson.",
     "prix": 300,
     "piquant": 1,
-    "couleur": "#5E8C8A"
+    "couleur": "#5E8C8A",
+    "url": "assets/img/produits/be5b2aaa-b6fa-493d-8926-0cce100c3de9.jpg"
   },
   {
     "id": "pimanbouk",
@@ -60,7 +66,8 @@
     "desc": "Petit piment rond, très fort. À doser avec prudence.",
     "prix": 300,
     "piquant": 3,
-    "couleur": "#D6361E"
+    "couleur": "#D6361E",
+    "url": "assets/img/produits/0ccaf136-0fd2-49fa-abe4-8fbbf94b271e.jpg"
   },
   {
     "id": "oiseau",
@@ -69,7 +76,8 @@
     "desc": "Minuscule et brûlant, pour les sauces et l'huile pimentée.",
     "prix": 350,
     "piquant": 3,
-    "couleur": "#B3261E"
+    "couleur": "#B3261E",
+    "url": "assets/img/produits/efbb7e2d-d3cc-40b2-8c4a-5411f2c4168f.jpg"
   },
   {
     "id": "cayenne",
@@ -78,7 +86,8 @@
     "desc": "Poudre fine et forte, à saupoudrer en fin de cuisson.",
     "prix": 280,
     "piquant": 3,
-    "couleur": "#E04A1F"
+    "couleur": "#E04A1F",
+    "url": "assets/img/produits/b54d0807-146e-4cd5-9dde-40b1f1e287be.jpg"
   },
   {
     "id": "fume",
@@ -87,7 +96,8 @@
     "desc": "Une chaleur moyenne avec un goût de feu de bois.",
     "prix": 380,
     "piquant": 2,
-    "couleur": "#8E2C14"
+    "couleur": "#8E2C14",
+    "url": "assets/img/produits/109bcb8b-e405-4b83-8dc5-f04ede010d14.jpg"
   },
   {
     "id": "flocons",
@@ -96,7 +106,8 @@
     "desc": "Pour relever les pâtes, les œufs et les grillades.",
     "prix": 260,
     "piquant": 2,
-    "couleur": "#E2672A"
+    "couleur": "#E2672A",
+    "url": "assets/img/produits/3741b9c9-d3c3-4c1b-876d-5de9be21bb14.jpg"
   },
   {
     "id": "pimentdoux",
@@ -105,7 +116,8 @@
     "desc": "Parfumé et à peine piquant, pour les sauces et le riz.",
     "prix": 240,
     "piquant": 1,
-    "couleur": "#E9893B"
+    "couleur": "#E9893B",
+    "url": "assets/img/produits/ca16c599-c8a0-4f1a-ae8d-eae206832f41.jpg"
   },
   {
     "id": "girofle",
@@ -114,7 +126,8 @@
     "desc": "Pour les sauces, le thé et le sirop.",
     "prix": 350,
     "piquant": 0,
-    "couleur": "#6B3A24"
+    "couleur": "#6B3A24",
+    "url": "assets/img/produits/72c9824a-c32f-425f-98ba-45412ecbb3e9.jpg"
   },
   {
     "id": "cannelle",
@@ -123,7 +136,8 @@
     "desc": "Parfume le café, le lait et les desserts.",
     "prix": 300,
     "piquant": 0,
-    "couleur": "#A8602B"
+    "couleur": "#A8602B",
+    "url": "assets/img/produits/a1c7186d-d6b9-43f9-9ff7-03ab63c03d78.jpg"
   },
   {
     "id": "cannellem",
@@ -132,7 +146,8 @@
     "desc": "Pour les gâteaux, les bouillies et le chocolat chaud.",
     "prix": 280,
     "piquant": 0,
-    "couleur": "#B97A3E"
+    "couleur": "#B97A3E",
+    "url": "assets/img/produits/f79f5e57-1963-4792-a846-02ae3a01a4d1.jpg"
   },
   {
     "id": "muscade",
@@ -141,7 +156,8 @@
     "desc": "À râper sur les bouillies, les crèmes et les sauces.",
     "prix": 450,
     "piquant": 0,
-    "couleur": "#8C6B4A"
+    "couleur": "#8C6B4A",
+    "url": "assets/img/produits/b360302e-8106-4786-b462-f92a5ef769b1.jpg"
   },
   {
     "id": "anis",
@@ -150,7 +166,8 @@
     "desc": "Une étoile suffit pour parfumer un thé ou un sirop.",
     "prix": 320,
     "piquant": 0,
-    "couleur": "#5A3320"
+    "couleur": "#5A3320",
+    "url": "assets/img/produits/6434be3e-c494-49a2-b2cb-70a3dc167c01.jpg"
   },
   {
     "id": "cardamome",
@@ -159,7 +176,8 @@
     "desc": "Graines parfumées pour le café et les pâtisseries.",
     "prix": 600,
     "piquant": 0,
-    "couleur": "#9BA66B"
+    "couleur": "#9BA66B",
+    "url": "assets/img/produits/c237f431-a394-47d7-b244-07d995d7979b.jpg"
   },
   {
     "id": "vanille",
@@ -168,7 +186,8 @@
     "desc": "Fendre la gousse et gratter les graines dans les crèmes.",
     "prix": 900,
     "piquant": 0,
-    "couleur": "#2B1A12"
+    "couleur": "#2B1A12",
+    "url": "assets/img/produits/b7d41159-d630-4243-9a83-77b56d027903.jpg"
   },
   {
     "id": "gingembre",

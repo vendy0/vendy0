@@ -3,7 +3,7 @@ import PRODUITS from "./produits/PRODUITS.json" with { type: "json" };
 import CATEGORIES from "./produits/CATEGORIES.json" with { type: "json" };
 import NIVEAUX from "./produits/NIVEAUX.json" with { type: "json" };
 
-const NUMERO_WHATSAPP = "594694379134"; // ton numéro, sans + ni espaces
+const NUMERO_WHATSAPP = "594694913097"; // ton numéro, sans + ni espaces
 const CLE = "nisca-panier"; // nom de la case dans localStorage
 
 // ---- Outils ----

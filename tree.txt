@@ -1,27 +1,48 @@
 Structure du dossier pour le volume Acer
 Le numéro de série du volume est 2802-E1A7
 C:.
-¦   boutique.html
-¦   contact.html
-¦   index.html
-¦   README.md
-¦   TODO.txt
-¦   tree.txt
-¦   
-+---assets
+|   boutique.html
+|   contact.html
+|   index.html
+|   README.md
+|   TODO.txt
+|   tree.txt
+|   
+\---assets
     +---css
-    ¦       accueil.css
-    ¦       style.css
-    ¦       
+    |       accueil.css
+    |       style.css
+    |       
     +---img
-    ¦       fond.svg
-    ¦       logo.svg
-    ¦       
-    +---js
-        ¦   accueil.js
-        ¦   script.js
-        ¦   
-        +---produits
+    |   |   fond.svg
+    |   |   logo.svg
+    |   |   
+    |   \---produits
+    |           0ccaf136-0fd2-49fa-abe4-8fbbf94b271e.jpg
+    |           109bcb8b-e405-4b83-8dc5-f04ede010d14.jpg
+    |           3741b9c9-d3c3-4c1b-876d-5de9be21bb14.jpg
+    |           458e82f9-5f09-4769-865b-1c1ecda6ee80.jpg
+    |           6434be3e-c494-49a2-b2cb-70a3dc167c01.jpg
+    |           72c9824a-c32f-425f-98ba-45412ecbb3e9.jpg
+    |           8aabf92e-5687-4674-ae1e-363d22c0a389.jpg
+    |           a1c7186d-d6b9-43f9-9ff7-03ab63c03d78.jpg
+    |           b360302e-8106-4786-b462-f92a5ef769b1.jpg
+    |           b54d0807-146e-4cd5-9dde-40b1f1e287be.jpg
+    |           b7d41159-d630-4243-9a83-77b56d027903.jpg
+    |           be5b2aaa-b6fa-493d-8926-0cce100c3de9.jpg
+    |           c237f431-a394-47d7-b244-07d995d7979b.jpg
+    |           ca16c599-c8a0-4f1a-ae8d-eae206832f41.jpg
+    |           d6a42c59-ed03-404b-a362-cd7c72ef1fe7.jpg
+    |           e39f7ac5-2e96-404f-b133-b469e23077c0.jpg
+    |           efbb7e2d-d3cc-40b2-8c4a-5411f2c4168f.jpg
+    |           f79f5e57-1963-4792-a846-02ae3a01a4d1.jpg
+    |           watermarked_img_15031480139303344093.jpg
+    |           
+    \---js
+        |   accueil.js
+        |   script.js
+        |   
+        \---produits
                 CATEGORIES.json
                 NIVEAUX.json
                 PRODUITS.json

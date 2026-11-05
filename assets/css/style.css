@@ -1,8 +1,13 @@
+/* ===== Thème sombre commun à toutes les pages : cacao, lin, safran ===== */
 :root {
-  --jaune: #f2b705; /* curcuma */
-  --encre: #1c2260; /* indigo */
-  --blanc: #ffffff;
-  --piment: #d6361e; /* réservé à l'info « piquant » et au focus */
+  color-scheme: dark;
+  --nuit: #1f1a17; /* cacao */
+  --terre: #2b221d; /* écorce */
+  --lin: #e9e1d3; /* texte */
+  --trait: rgba(233, 225, 211, 0.25);
+  --trait-fort: rgba(233, 225, 211, 0.55);
+  --safran: #c8a15a;
+  --piment: #d9795f; /* réservé à l'info « piquant » */
 }
 
 * {
@@ -12,9 +17,13 @@
 body {
   margin: 0;
   font-family: "Archivo", sans-serif;
-  color: var(--encre);
-  background: var(--blanc);
+  color: var(--lin);
+  background: var(--nuit);
   line-height: 1.5;
+}
+
+a {
+  color: var(--safran);
 }
 
 h1,
@@ -34,8 +43,8 @@ h3 {
 
 /* ---- En-tête ---- */
 header {
-  background: var(--jaune);
-  border-bottom: 4px solid var(--encre);
+  background: var(--nuit);
+  border-bottom: 1px solid var(--trait);
   padding: 0.75rem 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -53,13 +62,17 @@ nav {
   gap: 2rem;
 }
 nav a {
-  color: var(--encre);
-  font-weight: 700;
+  color: var(--lin);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 nav a[aria-current="page"] {
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-color: var(--safran);
+  text-decoration-thickness: 2px;
   text-underline-offset: 6px;
 }
 
@@ -84,12 +97,10 @@ main {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.filtre {
-  background: transparent;
-  color: var(--encre);
-}
 .filtre[aria-pressed="true"] {
-  background: var(--jaune);
+  background: var(--safran);
+  border-color: var(--safran);
+  color: var(--nuit);
 }
 
 /* ---- Liste de prix ---- */
@@ -100,21 +111,21 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
-  border-bottom: 4px solid var(--encre);
+  border-bottom: 1px solid var(--trait);
 }
 .produit {
   display: grid;
   grid-template-columns: 3.5rem 1fr;
   gap: 0.25rem 1rem;
   padding: 1rem 0;
-  border-top: 4px solid var(--encre);
+  border-top: 1px solid var(--trait);
 }
 .pastille {
   grid-row: 1 / 3;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  border: 3px solid var(--encre);
+  border: 2px solid var(--trait-fort);
 }
 .infos p {
   margin: 0;
@@ -134,40 +145,77 @@ main {
 }
 .achat strong {
   font-size: 1.25rem;
+  color: var(--safran);
 }
 
-/* ---- Boutons ---- */
+/* ---- Boutons : contour par défaut, safran plein pour l'action principale ---- */
 button {
   font: inherit;
   font-weight: 700;
-  background: var(--encre);
-  color: var(--jaune);
-  border: 3px solid var(--encre);
+  background: transparent;
+  color: var(--lin);
+  border: 2px solid var(--trait-fort);
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
-button:focus-visible,
-a:focus-visible {
-  outline: 3px solid var(--piment);
-  outline-offset: 3px;
+button:hover {
+  background: var(--safran);
+  border-color: var(--safran);
+  color: var(--nuit);
 }
 button.principal {
-  background: var(--jaune);
-  color: var(--encre);
+  background: var(--safran);
+  border-color: var(--safran);
+  color: var(--nuit);
+}
+button.principal:hover {
+  background: transparent;
+  color: var(--safran);
 }
 button:disabled {
   opacity: 0.4;
-  cursor: not-allowed;
+  pointer-events: none;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--safran);
+  outline-offset: 3px;
 }
 .qte {
   padding: 0.1rem 0.7rem;
+}
+
+/* ---- Boutons-liens ---- */
+.bouton {
+  display: inline-block;
+  font-weight: 700;
+  background: transparent;
+  color: var(--lin);
+  border: 2px solid var(--trait-fort);
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+}
+.bouton:hover {
+  background: var(--safran);
+  border-color: var(--safran);
+  color: var(--nuit);
+}
+.bouton.principal {
+  background: var(--safran);
+  border-color: var(--safran);
+  color: var(--nuit);
+}
+.bouton.principal:hover {
+  background: transparent;
+  color: var(--safran);
 }
 
 /* ---- Panier ---- */
 #panier {
   position: sticky;
   top: 1.5rem;
-  border: 4px solid var(--encre);
+  background: var(--terre);
+  border: 1px solid var(--trait);
   padding: 1.25rem;
 }
 #panier-liste {
@@ -180,7 +228,7 @@ button:disabled {
   align-items: center;
   gap: 0.3rem 1rem;
   padding: 0.6rem 0;
-  border-bottom: 1px solid var(--encre);
+  border-bottom: 1px solid var(--trait);
 }
 .ligne-panier strong {
   grid-column: 2;
@@ -203,13 +251,37 @@ button:disabled {
   width: 100%;
 }
 #vider {
-  background: transparent;
-  color: var(--encre);
   margin-top: 0.5rem;
+  border-color: var(--trait);
+}
+
+/* ---- Étapes (utilisées par l'accueil) ---- */
+.etapes {
+  list-style: none;
+  counter-reset: etape;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+.etapes li {
+  counter-increment: etape;
+  border-top: 1px solid var(--trait);
+  padding-top: 1rem;
+}
+.etapes li::before {
+  content: counter(etape);
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 1;
+  color: var(--safran);
 }
 
 footer {
-  border-top: 4px solid var(--encre);
+  border-top: 1px solid var(--trait);
   text-align: center;
   padding: 1rem;
 }
@@ -229,66 +301,11 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .liste {
+  .liste,
+  .etapes {
     grid-template-columns: 1fr;
   }
   h1 {
     font-size: 1.75rem;
-  }
-}
-
-/* ---- Boutons-liens ---- */
-.bouton {
-  display: inline-block;
-  font-weight: 700;
-  background: var(--encre);
-  color: var(--jaune);
-  border: 3px solid var(--encre);
-  padding: 0.6rem 1.2rem;
-  text-decoration: none;
-}
-.bouton.principal {
-  background: var(--jaune);
-  color: var(--encre);
-}
-
-/* ---- Accueil ---- */
-.hero {
-  padding: 3rem 0;
-  border-bottom: 4px solid var(--encre);
-}
-.hero h1 {
-  font-size: clamp(2.5rem, 7vw, 5rem);
-}
-.hero p {
-  font-size: 1.25rem;
-  max-width: 36rem;
-  margin: 0 0 1.5rem;
-}
-.etapes {
-  list-style: none;
-  counter-reset: etape;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 0;
-  margin: 2rem 0 0;
-}
-.etapes li {
-  counter-increment: etape;
-  border-top: 4px solid var(--encre);
-  padding-top: 1rem;
-}
-.etapes li::before {
-  content: counter(etape);
-  display: block;
-  font-size: 3rem;
-  font-weight: 800;
-  font-stretch: 125%;
-  line-height: 1;
-}
-@media (max-width: 40rem) {
-  .etapes {
-    grid-template-columns: 1fr;
   }
 }
