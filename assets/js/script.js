@@ -6,6 +6,10 @@ import NIVEAUX from "./produits/NIVEAUX.json" with { type: "json" };
 const NUMERO_WHATSAPP = "594694913097"; // ton numéro, sans + ni espaces
 const CLE = "nisca-panier"; // nom de la case dans localStorage
 
+// ---- Gestion de la modale d'image ----
+const modal = document.getElementById("modal-image");
+const modalImg = document.getElementById("modal-img-contenu");
+
 // ---- Outils ----
 let categorieActive = "tout"; // la catégorie affichée en ce moment
 const trouver = (id) => PRODUITS.find((p) => p.id === id);
@@ -170,11 +174,6 @@ afficherFiltres();
 afficherProduits();
 afficherPanier();
 
-
-// ---- Gestion de la modale d'image ----
-const modal = document.getElementById("modal-image");
-const modalImg = document.getElementById("modal-img-contenu");
-
 function ouvrirModal(url) {
   if (!modal || !modalImg) return;
   modalImg.src = url;
@@ -198,7 +197,10 @@ document.addEventListener("click", (e) => {
   }
 
   // Fermer la modale si on clique sur la croix ou en dehors de l'image
-  if (e.target.id === "modal-image" || e.target.classList.contains("modal-fermer")) {
+  if (
+    e.target.id === "modal-image" ||
+    e.target.classList.contains("modal-fermer")
+  ) {
     fermerModal();
   }
 

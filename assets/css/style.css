@@ -56,11 +56,29 @@ header img {
   height: 52px;
   display: block;
 }
+
 nav {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
+/* Création de la ligne invisible au repos, positionnée sous le texte */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--safran);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Animation au survol : la ligne s'étale de 0% à 100% de la gauche vers la droite */
+nav a:hover::after {
+  width: 100%;
+}
+
 nav a {
   color: var(--lin);
   font-weight: 500;
@@ -68,12 +86,18 @@ nav a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 }
 nav a[aria-current="page"] {
   text-decoration: underline;
   text-decoration-color: var(--safran);
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
+}
+
+/* Le lien actif (page courante) garde sa ligne pleine en permanence */
+nav a[aria-current="page"]::after {
+  width: 100%;
 }
 
 /* ---- Icône du panier dans la navigation ---- */
