@@ -196,7 +196,8 @@
     "desc": "Pour les tisanes, les jus et les marinades.",
     "prix": 200,
     "piquant": 2,
-    "couleur": "#D9A441"
+    "couleur": "#D9A441",
+    "url": "assets/img/produits/edb3cd55-f6ad-4e36-9cee-725ce38aeaac.jpg"
   },
   {
     "id": "curcuma",
@@ -205,7 +206,8 @@
     "desc": "Colore les plats en jaune avec une saveur douce.",
     "prix": 250,
     "piquant": 0,
-    "couleur": "#F2B705"
+    "couleur": "#F2B705",
+    "url": "assets/img/produits/89f6afcc-4e72-44b7-9753-a823d5d63ed3.jpg"
   },
   {
     "id": "poivrenoir",
@@ -214,7 +216,8 @@
     "desc": "Moulu finement, pour toutes les cuissons.",
     "prix": 275,
     "piquant": 1,
-    "couleur": "#2A2A2E"
+    "couleur": "#2A2A2E",
+    "url": "assets/img/produits/765ca0b5-627c-4a31-9cf4-1812f692fd05.jpg"
   },
   {
     "id": "poivreblanc",
@@ -223,7 +226,8 @@
     "desc": "Plus discret, idéal pour les sauces claires.",
     "prix": 300,
     "piquant": 1,
-    "couleur": "#D9D3C3"
+    "couleur": "#D9D3C3",
+    "url": "assets/img/produits/4149f4ab-a192-4b9b-8376-bdd35ca5903e.jpg"
   },
   {
     "id": "paprika",
@@ -232,7 +236,8 @@
     "desc": "Rouge et doux, pour colorer les viandes et le riz.",
     "prix": 260,
     "piquant": 0,
-    "couleur": "#B83A2A"
+    "couleur": "#B83A2A",
+    "url": "assets/img/produits/8b4a7c6d-8ed9-4e8e-bbb6-9e1dc36ae500.jpg"
   },
   {
     "id": "cumin",
@@ -241,7 +246,8 @@
     "desc": "Chaud et terreux, pour les viandes et les haricots.",
     "prix": 280,
     "piquant": 0,
-    "couleur": "#9A7B4F"
+    "couleur": "#9A7B4F",
+    "url": "assets/img/produits/91a88ab3-e0ac-4e51-a0d0-dbabb6af0bf4.jpg"
   },
   {
     "id": "tim",
@@ -250,7 +256,8 @@
     "desc": "Séché au soleil, indispensable dans les sauces.",
     "prix": 200,
     "piquant": 0,
-    "couleur": "#7A8F3C"
+    "couleur": "#7A8F3C",
+    "url": "assets/img/produits/d0237abb-7277-4436-bcc7-354342345b81.jpg"
   },
   {
     "id": "persil",
@@ -259,7 +266,8 @@
     "desc": "Pour les sauces, les soupes et les omelettes.",
     "prix": 180,
     "piquant": 0,
-    "couleur": "#3F7D4E"
+    "couleur": "#3F7D4E",
+    "url": "assets/img/produits/b8639726-8a21-4e5e-a034-860345257a20.jpg"
   },
   {
     "id": "laurier",
@@ -268,7 +276,8 @@
     "desc": "Quelques feuilles dans les bouillons et les haricots.",
     "prix": 150,
     "piquant": 0,
-    "couleur": "#55703A"
+    "couleur": "#55703A",
+    "url": "assets/img/produits/aeb2e64e-6e7a-4d51-861d-2933f149670b.jpg"
   },
   {
     "id": "basilic",
@@ -277,7 +286,8 @@
     "desc": "Pour les sauces tomate et les marinades.",
     "prix": 200,
     "piquant": 0,
-    "couleur": "#2F6B3F"
+    "couleur": "#2F6B3F",
+    "url": "assets/img/produits/e3894bfa-e06b-486c-a428-4e622734f165.jpg"
   },
   {
     "id": "origan",
@@ -286,7 +296,8 @@
     "desc": "Parfume les viandes grillées et les sauces.",
     "prix": 220,
     "piquant": 0,
-    "couleur": "#6D7F3B"
+    "couleur": "#6D7F3B",
+    "url": "assets/img/produits/d067e7b2-cd6f-4611-84f7-c82ad920b6e8.jpg"
   },
   {
     "id": "citronnelle",
@@ -295,6 +306,7 @@
     "desc": "Pour les tisanes et les plats de poisson.",
     "prix": 180,
     "piquant": 0,
-    "couleur": "#B7C24A"
+    "couleur": "#B7C24A",
+    "url": "assets/img/produits/f3f348d3-566c-42a8-ae08-ed6029b057fc.jpg"
   }
 ]
