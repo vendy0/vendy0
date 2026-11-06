@@ -1,13 +1,13 @@
 /* ===== Thème sombre commun à toutes les pages : cacao, lin, safran ===== */
 :root {
   color-scheme: dark;
-  --nuit: #1f1a17; /* cacao */
-  --terre: #2b221d; /* écorce */
-  --lin: #e9e1d3; /* texte */
-  --trait: rgba(233, 225, 211, 0.25);
-  --trait-fort: rgba(233, 225, 211, 0.55);
+  --nuit: #26201b;
+  --terre: #302822;
+  --lin: #d6cdbd;
+  --trait: rgba(214, 205, 189, 0.2);
+  --trait-fort: rgba(214, 205, 189, 0.4);
   --safran: #c8a15a;
-  --piment: #d9795f; /* réservé à l'info « piquant » */
+  --piment: #d9795f;
 }
 
 * {

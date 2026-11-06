@@ -54,7 +54,3 @@ La palette (cacao, lin, safran) vient des épices. La police est Archivo. Les fe
 - Le panier est propre à chaque navigateur : il ne suit pas l'utilisateur d'un appareil à l'autre.
 - Les prix et le total sont calculés dans le navigateur, donc modifiables par un utilisateur averti. Le vendeur doit vérifier la commande reçue.
 - Il n'y a pas de gestion de stock ni de paiement.
-
-## Contexte
-
-Projet réalisé par Andy V. Descartes (vendy0 sur GitHub) pour un devoir sur HTML, CSS et JavaScript. L'IA a été utilisée comme aide, comme le permettaient les consignes.
